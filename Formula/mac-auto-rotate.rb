@@ -1,8 +1,8 @@
 class MacAutoRotate < Formula
   desc "Rotate a MacBook display from its SPU motion sensor"
   homepage "https://github.com/ZimengXiong/macAutoRotate"
-  url "https://github.com/ZimengXiong/macAutoRotate/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "7eaeaa192b316cac55543ca5cd6556430e60d23dddbfd7b2b5891561ae5afa1a"
+  url "https://github.com/ZimengXiong/macAutoRotate/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "5e48871edb1d2325c3548d3de854a2f03c4c42ff428382b481a238711190e64e"
   license "MIT"
 
   depends_on "rust" => :build
@@ -14,6 +14,6 @@ class MacAutoRotate < Formula
   end
 
   test do
-    system "#{bin}/mac-auto-rotate", "--help"
+    system "#{bin}/macAutoRotate", "--help"
   end
 end
